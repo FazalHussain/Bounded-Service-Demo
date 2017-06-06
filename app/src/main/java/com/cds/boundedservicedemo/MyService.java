@@ -92,9 +92,7 @@ public class MyService extends Service {
     public ArrayList<Integer> getRandomNumber(){
         return listRandom;
     }
-
-
-    //Destroy Service
+    
     @Override
     public void onDestroy() {
         super.onDestroy();
