@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cds.boundedservicedemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bindbtn"
+        android:onClick="BindClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bind Service" />
+
+    <Button
+        android:id="@+id/unbindbtn"
+        android:onClick="unBindClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UnBind Service" />
+
+    <Button
+        android:id="@+id/randnumberbtn"
+        android:onClick="RandomClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UnBind Service" />
+</LinearLayout>
