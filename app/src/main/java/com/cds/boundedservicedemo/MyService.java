@@ -24,7 +24,7 @@ public class MyService extends Service {
     private int MIN = 0;
     private int MAX = 100;
 
-    private static final String TAG = "MyService";
+    private static final String TAG = "MyService_TAG";
 
     class MyServiceBinder extends Binder {
         public MyService getService(){
@@ -70,6 +70,8 @@ public class MyService extends Service {
         return START_STICKY;
     }
 
+
+    //Generate Random Number
     private void generateRandomNumber() throws InterruptedException {
         while (isRandomnumgenerate) {
             try {
@@ -91,6 +93,8 @@ public class MyService extends Service {
         return listRandom;
     }
 
+
+    //Destroy Service
     @Override
     public void onDestroy() {
         super.onDestroy();
